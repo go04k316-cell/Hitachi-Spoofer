@@ -1,0 +1,96 @@
+{
+  "version": "4.0.0",
+  "application": {
+    "name": "Hitachi Spoofer",
+    "description": "Professional HWID Spoofing Tool",
+    "author": "go04k316-cell",
+    "license": "MIT"
+  },
+  "logging": {
+    "enabled": true,
+    "level": "info",
+    "file_path": "logs/spoofer.log",
+    "max_file_size_mb": 50,
+    "max_backup_files": 5,
+    "console_output": true,
+    "detailed_timestamps": true
+  },
+  "backup": {
+    "enabled": true,
+    "auto_backup_on_spoof": true,
+    "backup_directory": "backups/",
+    "max_backups": 10,
+    "backup_compression": false,
+    "retention_days": 30
+  },
+  "ui": {
+    "theme": "dark",
+    "font_size": 14,
+    "remember_last_tab": true,
+    "remember_window_position": false,
+    "window_width": 1050,
+    "window_height": 670,
+    "show_splash_screen": true,
+    "animations_enabled": true
+  },
+  "security": {
+    "require_admin_privileges": true,
+    "validate_privileges_on_startup": true,
+    "ask_confirmation_before_spoof": true,
+    "ask_confirmation_before_recovery": true,
+    "enable_operation_logging": true,
+    "save_operation_history": true
+  },
+  "performance": {
+    "enable_async_operations": true,
+    "max_concurrent_operations": 2,
+    "operation_timeout_seconds": 300,
+    "frame_rate": 60,
+    "enable_profiling": false
+  },
+  "spoofing": {
+    "spoof_mac_address": true,
+    "spoof_machine_guid": true,
+    "spoof_product_id": true,
+    "spoof_volume_serials": true,
+    "spoof_cpu_serial": false,
+    "spoof_bios_serial": false,
+    "generate_unique_values": true,
+    "use_realistic_values": true
+  },
+  "profiles": [
+    {
+      "name": "Default Profile",
+      "description": "Default spoofing configuration",
+      "spoof_mac": true,
+      "spoof_guid": true,
+      "spoof_product_id": true,
+      "spoof_volume_c": true,
+      "spoof_volume_d": false,
+      "created_at": "2026-07-21",
+      "is_default": true
+    }
+  ],
+  "advanced": {
+    "use_driver_communication": true,
+    "use_registry_direct_access": false,
+    "use_wmi_queries": false,
+    "enable_safe_mode": true,
+    "create_system_restore_point": false,
+    "verify_spoof_after_operation": true
+  },
+  "updates": {
+    "check_for_updates": true,
+    "check_interval_days": 7,
+    "auto_download": false,
+    "auto_install": false,
+    "beta_updates": false,
+    "last_check_time": null
+  },
+  "telemetry": {
+    "enabled": false,
+    "send_error_reports": false,
+    "send_usage_statistics": false,
+    "send_system_info": false
+  }
+}
