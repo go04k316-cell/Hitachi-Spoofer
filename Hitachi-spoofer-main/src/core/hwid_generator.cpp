@@ -118,14 +118,14 @@ std::string HWIDGenerator::GenerateVolumeSerial() {
 
 HWIDData HWIDGenerator::GenerateComplete() {
     HWIDData data;
-    data.macAddress = GenerateMAC();
+    data.mac_address = GenerateMAC();
     data.guid = GenerateGUID();
-    data.serialNumber = GenerateSerialNumber();
-    data.productId = GenerateProductID();
-    data.cpuSerial = GenerateCPUSerial();
-    data.biosSerial = GenerateBIOSSerial();
-    data.volumeSerialC = GenerateVolumeSerial();
-    data.volumeSerialD = GenerateVolumeSerial();
+    data.serial_number = GenerateSerialNumber();
+    data.product_id = GenerateProductID();
+    data.cpu_serial = GenerateCPUSerial();
+    data.bios_serial = GenerateBIOSSerial();
+    data.volume_serial_c = GenerateVolumeSerial();
+    data.volume_serial_d = GenerateVolumeSerial();
     return data;
 }
 
